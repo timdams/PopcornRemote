@@ -24,6 +24,7 @@ namespace PopcornRemoteTest1
             object settingValue;
             if (IsolatedStorageSettings.ApplicationSettings.TryGetValue(settingKey, out settingValue))
                 return (T)settingValue;
+            //Do other shit to test git
             return default(T);
         }
 
